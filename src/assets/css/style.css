@@ -1,0 +1,28 @@
+.app-auth {
+  background: url(https://web5days.com/static/media/bg-auth.824506ac.jpg);
+  background-size: cover;
+  display: block;
+  height: 100vh;
+}
+.login-form{
+ 
+  border-radius: 5px;
+  padding: 26px 24px 0px; 
+  font-weight: 400;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 13%);
+}
+
+
+.app-auth .logo img{
+  object-fit: cover;
+  display: block;
+  width: 160px;
+  height:160px;
+  margin: auto;
+  padding: 15px;
+}
+
+.ant-breadcrumb a {
+  color:  #f0f0f0;
+}

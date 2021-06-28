@@ -1,17 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import WraperApp from 'components/WraperApp';
 
-function Home() {
+function Home (){
   return (
-    <div>
-      <h1>đây là trang chủ</h1>
-      <Link to="/about">about</Link>
-    </div>
-  );
+    <WraperApp>
+      <p>trang chu</p>
+    </WraperApp>
+  )
 }
 
-export default Home;
+export default Home
