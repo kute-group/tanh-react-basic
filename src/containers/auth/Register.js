@@ -32,7 +32,7 @@ const RegisterFrom = () => {
     <div>
       <Row>
         <Col span={8}></Col>
-        <Col span={8}>
+        <Col span={8} className='login-form'>
           <Form name="normal_register"
             className="register-form"
             initialValues={{
@@ -96,6 +96,8 @@ const RegisterFrom = () => {
               </Button>
             </Form.Item>
           </Form>
+          <LoginWith />
+          <AuthChoose />
         </Col>
         <Col span={8}></Col>
       </Row>
@@ -109,10 +111,10 @@ function Register() {
       <div className="app-auth">
         <div className="logo">
           <img src={logo} />
+        </div >
+        <div >
+          <RegisterFrom />
         </div>
-        <RegisterFrom />
-        <LoginWith />
-        <AuthChoose />
       </div>
     </WraperAuthen>
 

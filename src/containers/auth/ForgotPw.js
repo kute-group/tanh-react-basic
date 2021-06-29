@@ -6,6 +6,7 @@ import { Form, } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
 import WraperAuthen from 'components/WraperAuthen'
 import logo from "assets/images/Xiaomi.png"
+import { Alert } from 'antd';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,14 +22,16 @@ const ForgotPassword = () => {
       email: '${label} is not a valid email!',
     },
   }
-  
+
   return (
     <div >
       <Row>
         <Col span={8}></Col>
         <Col span={8}>
-          <div className="bg-form">
-            <h3>Bạn vui lòng nhập e-mail, chúng tôi sẽ gửi link cập nhật mật khẩu qua e-mail.</h3>
+          <div className="login-form">
+            <div>
+            <Alert message="Bạn vui lòng nhập e-mail, chúng tôi sẽ gửi link cập nhật mật khẩu qua e-mail." type="info" closeText="Đóng" />
+            </div>
             <Form
               name="normal_login"
               className="login-form"
@@ -51,6 +54,7 @@ const ForgotPassword = () => {
                   Khôi Phục Mật Khẩu
                 </Button>
               </Form.Item>
+              <AuthChoose />
             </Form>
           </div>
         </Col>
@@ -69,7 +73,6 @@ function ForgotPw() {
         </div>
         <div >
           <ForgotPassword />
-          <AuthChoose />
         </div>
       </div>
     </WraperAuthen>

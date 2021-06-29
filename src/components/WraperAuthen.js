@@ -22,12 +22,11 @@ function WraperAuthen(props) {
           <Menu.Item key="4"><Link to='/login'>Đăng Nhập</Link></Menu.Item>
         </Menu>
       </Header>
-      <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-        <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-          {props.children};
+      <Content className="site-layout" style={{ padding:0 , marginTop: 64 }}>
+        <div className="site-layout-background" style={{ padding: 0, minHeight: 380 }}>
+          {props.children}
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
   );
 }

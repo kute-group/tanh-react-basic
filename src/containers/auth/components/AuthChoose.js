@@ -14,14 +14,11 @@ const { Header, Content, Footer, } = Layout;
 function AuthChoose() {
   return (
     <Row>
-      <Col span={4}></Col>
-      <Col span={4}></Col>
-      <Col span={12}>
+      <Col span={24} >
         <div>
-          <p>hoặc</p>
           <Breadcrumb>
             <Breadcrumb.Item>
-              <Link to="/login">Đăng nhập</Link>
+              <Link to="/login">Đăng nhập</Link>  
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <Link to="/register">Đăng kí</Link>
@@ -38,7 +35,6 @@ function AuthChoose() {
           </Breadcrumb>
         </div>
       </Col>
-      <Col span={4}></Col>
     </Row>
   );
 }

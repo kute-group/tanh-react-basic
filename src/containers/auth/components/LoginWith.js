@@ -18,18 +18,19 @@ function LoginWith(props) {
   return (
     <div>
       <Row>
-        <Col lg={8}></Col>
-        <Col lg={4}>
+        <Col lg={1}></Col>
+        <Col lg={10} className='login-from'>
           <Button type="dashed" block shape="round" icon={<FacebookOutlined />} >
             Đăng Nhập qua facebook
           </Button>
         </Col>
-        <Col lg={4}>
+        <Col lg={1}></Col>
+        <Col lg={10} className="login-from">
           <Button danger block shape="round" icon={<GooglePlusOutlined />}>
             Đăng nhập qua gmail
           </Button>
         </Col>
-        <Col lg={8}></Col>
+        <Col lg={1}></Col>
       </Row>
     </div>
   );

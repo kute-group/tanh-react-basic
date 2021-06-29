@@ -28,7 +28,7 @@ const NormalLoginForm = () => {
     <div>
       <Row>
         <Col span={8}></Col>
-        <Col span={8}>
+        <Col span={8} className='login-form'>
 
           <Form name="normal_login"
             className="login-form"
@@ -60,6 +60,8 @@ const NormalLoginForm = () => {
               </Button>
             </Form.Item>
           </Form>
+          <LoginWith />
+          <AuthChoose />
         </Col>
         <Col span={8}></Col>
       </Row>
@@ -74,10 +76,8 @@ function Login() {
         <div className="logo">
           <img src={logo} />
         </div>
-        <div className="bg-form">
+        <div >
           <NormalLoginForm />
-          <LoginWith />
-          <AuthChoose />
         </div>
       </div>
     </WraperAuthen>
